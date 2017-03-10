@@ -1,0 +1,56 @@
+
+#!/bin/sh
+
+echo "You have been summoned to the Minotaur's cave."
+
+echo
+
+echo "Only foolish men dare to enter this lair."
+
+echo
+
+echo "...but you may survive."
+
+echo
+
+echo "Your weapons:"
+
+echo "Sword"
+
+echo "Lance"
+
+echo "Mace"
+
+echo "Dragon's Blood"
+
+echo
+
+echo "Choose Your Weapon!"
+
+read weapon
+
+case "$weapon" in
+
+Sword) echo "Steel is no match for a Minotaur's skin! He crushes your skull, you have died!"
+     
+     ;;
+
+Lance) echo "The Minotaur dodges the swing of your lance and then slashes your throat in one blow, you are dead!"
+
+     ;;
+
+Mace) echo "You swing the mace, crushing the Minotaur's face into a thousand pieces. He falls to the ground, though still alive he will never be the same."
+
+     ;;
+
+"Dragon's Blood")  echo "You cast the Dragon's Blood, the Minotaur chokes and falls to the ground.  You have defeated the Minotaur!"
+
+     ;;
+*)	echo "This is not a weapon of this world!"
+
+     ;;
+
+esac
+
+exit 0
+
